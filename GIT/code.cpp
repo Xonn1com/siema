@@ -58,10 +58,10 @@ int main()
 	while (true) {
 		
 		liczba = rand() % 100 + 1;
-		liczba2 = rand() % 1000 + 1;
-		liczba3 = rand() % 1000 + 1;
-		if (liczba2 <= 100) { liczba2 = 500; };
-		if (liczba3 <= 100) { liczba3 = 500; };
+		liczba2 = rand() % 1500 + 1;
+		liczba3 = rand() % 1500 + 1;
+		if (liczba2 < 100) { liczba2 = 500; };
+		if (liczba3 < 100) { liczba3 = 500; };
 		SetConsoleTextAttribute(hCon, liczba);
 		cout << z2 << liczba;
 		MoveWindow(console, ConsoleRect.left, ConsoleRect.top, liczba2, liczba3, TRUE);
